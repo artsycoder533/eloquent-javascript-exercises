@@ -14,7 +14,7 @@ Passing this string to console.log should show something like this:
 When you have a program that generates this pattern, define a binding size = 8 and change the program so that it works for any size, outputting a grid of the given width and height.
 */
 
-let size = 8;
+let size = +prompt("enter size", 8);
 let count = 1;
 let chessboard = "";
 
@@ -40,34 +40,7 @@ for (let i = 1; i <= size; i++){
 			count++;
         }
     }
-    console.log(chessboard.substr(chessboard.length-8, chessboard.length), "\n");
+    console.log(chessboard.substr(chessboard.length-size, chessboard.length), "\n");
 }
 
-
-while (count <= 64) {
-	
-    
-
-}
-
-console.log(chessboard, chessboard.length);
-
-
-
-// for (let i = 1; i <= 2; i++){
-//     for (let j = 1; j <= size; j++){
-//         // for all add numbers print a space
-//         if (count % 2 !== 0) {
-//             chessboard += "0";
-//         }
-//         //for all even numbers print a #
-//         if (count % 2 === 0) {
-//             chessboard += "#";
-//         }
-//         count++;
-//         console.log(count);
-//     }
-//     console.log(chessboard, "\n");
-//     chessboard = "";
-// }
 
