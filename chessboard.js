@@ -40,7 +40,9 @@ for (let i = 1; i <= size; i++){
 			count++;
         }
     }
-    console.log(chessboard.substr(chessboard.length-size, chessboard.length), "\n");
+    // add a new line after every n characters
+    chessboard += "\n";
 }
+console.log(chessboard);
 
 
