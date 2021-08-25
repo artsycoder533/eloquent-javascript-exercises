@@ -11,16 +11,14 @@ Define a recursive function isEven corresponding to this description. The functi
 */
 
 function isEven(n) {
-    //base case n is 0 or 1
-    if (n === 0) {
-        return true;
-    }
-    else if (n === 1) {
-        return false;
-    }
-    else {
-        return isEven(n - 2);
-    }
+	//base case n is 0 or 1
+	if (n === 0) {
+		return true;
+	} else if (n === 1) {
+		return false;
+	} else {
+		return isEven(n - 2);
+	}
 }
 
 isEven(3);
