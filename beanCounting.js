@@ -32,4 +32,4 @@ function countBs(word){
     return countChar(word, "B");
 }
 console.log(countBs("BBC"));
-console.log(countChar("kakkerlak", "k"));
+console.log(countChar("kakkerlak", "k")); 
